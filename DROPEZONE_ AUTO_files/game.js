@@ -49,7 +49,7 @@ function emo(ch, size = 20) {
 // 'local'  — правила выполняются прямо в браузере, прогресс в localStorage (тесты на компьютере).
 // для проверки с локальным сервером: http://localhost:5173/?api=http://localhost:8787
 const DEV_API = new URLSearchParams(location.search).get('api');
-const API = 'http://localhost:8000';
+const API = '';
 const tgUser = () => ({ id: 8252703031, first_name: "Serik", username: "Serik" });
 // админ: в Telegram — ADMIN_IDS; в браузере (тестовый режим) — всегда
 const isAdmin = () => true;
