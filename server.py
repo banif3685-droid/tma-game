@@ -250,4 +250,4 @@ class GameServer(SimpleHTTPRequestHandler):
         self.wfile.write(json.dumps(response, ensure_ascii=False).encode('utf-8'))
 
 print(f"Сервер клона запущен: http://localhost:{PORT}")
-HTTPServer(('localhost', PORT), GameServer).serve_forever()
+HTTPServer(('0.0.0.0', PORT), GameServer).serve_forever()
