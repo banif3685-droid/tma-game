@@ -1,8 +1,9 @@
 import json
-import time
+import os
 import random
+import time
 import uuid
-from http.server import SimpleHTTPRequestHandler, HTTPServer
+from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 PORT = int(os.environ.get("PORT", 8000))
 
